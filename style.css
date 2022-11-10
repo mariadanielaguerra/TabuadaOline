@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  background-image: url(img/fundomath.png);
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  margin-left: -0.1rem;
+}
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  text-align: center;
+}
+#border {
+  background: linear-gradient(to right, #430e5a, #d97be4);
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 352px;
+  height: 352px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 2px #000000af;
+}
+#container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  padding: 2rem;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+
+#btn {
+  border: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b350de;
+  color: rgb(0, 0, 0);
+  border-radius: 10%;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: rgb(57, 3, 81);
+  color: #ffffff;
+}
+#seltab {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#entrada {
+  width: 50px;
+}
+#res {
+  display: none;
+}
+@media screen and (max-width: 480px) and (max-height: 600px) and (orientation: portrait) {
+  body {
+    width: 95vw;
+    margin-left: 0.2rem;
+  }
+  #border {
+    width: 97vw;
+    height: 25%;
+  }
+  #container {
+    width: 90%;
+    height: 54vh;
+  }
+}
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: max(22px, 4.5vw);
+  }
+  #border {
+    width: 90em;
+    height: 90em;
+  }
+  #container {
+    width: 82em;
+    height: 82em;
+  }
+
+  #seltab {
+    font-size: 3em;
+  }
+
+  span {
+    font-size: max(22px, 2vw);
+  }
+  #entrada {
+    font-size: 2vw;
+    width: 5vw;
+    border: 0.1vw inset rgba(0, 0, 0, 0.555);
+  }
+  #btn {
+    font-size: max(22px, 2vw);
+  }
+}
